@@ -1,0 +1,90 @@
+.<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeakUp</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/media-query.css" />
+
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body id="bodyLogin">
+    <img src="images/logoAluno.png" alt="SpeakUp Kids" class="logo" />
+    <main>
+      <div class="backArrow">
+        <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+      </div>
+      <div class="container">
+        <form
+          action="alunoConfereDados.jsp"
+          class="formCadastrar"
+          method="post"
+        >
+          <button
+            class="fa-solid fa-eye"
+            id="olhoLogin"
+            id="eye"
+            type="button"
+            onclick="mostrarOcultarSenha()"
+          ></button>
+          <div class="form">
+            <h3 class="title">Acessar Conta Aluno</h3>
+            <br />
+            <div class="inputs">
+              <label for="usuario" class="fa-solid fa-user"></label>
+              <input
+                type="text"
+                placeholder="Usuário"
+                id="usuario"
+                name="usu_aluno"
+                required
+              />
+              <br />
+              <label for="senha" class="fa-solid fa-lock"></label>
+              <input
+                type="password"
+                placeholder="Senha"
+                id="senha"
+                name="senha_aluno"
+                required
+              />
+            </div>
+            <br />
+            <div class="linksLogin">
+                <a href="alunoEsqueceuSenha.jsp">Esqueceu a Senha</a>
+            </div>
+            <br />
+            <br />
+            <button
+              type="submit"
+              class="botaoLogar"
+              onclick="mostrarOcultarSenha()"
+            >
+              Entrar
+            </button>
+          </div>
+          <br />
+        </form>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/87c9f9014b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

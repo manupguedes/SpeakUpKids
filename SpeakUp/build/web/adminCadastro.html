@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Administrador</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <img src="images/logoAdmin.png" alt="SpeakUp Area Professor" class="logoProfessor">
+    <main id="bodyLogin">
+        <div class="backArrow">
+            <a href="loginEscolhaFuncionario.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="container">   
+            <form action="adminRecebeDados.jsp" class="formCadastrar" method="post">
+                <div class="form">
+                <button class="fa-solid fa-eye" id="olhoProfessor" id="eye" onclick="mostrarOcultarSenha()" type="button"></button>
+                <h3 class="title">Cadastrar Administrador</h3>
+                <br>
+                <div class="inputs">     
+                        <i class="fa-solid fa-child-reaching"></i>
+                        <input type="text" placeholder="Nome Completo" id="nomeAdmin" name="nome_admin" required>
+                    <br>
+                        <i class="fa-sharp fa-solid fa-envelope"></i>
+	                    <input type='email' placeholder='Email' id='email' name="email_admin" required>
+                    <br>
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Usuário" id="usuario" name="usu_admin" required> 
+                <br>
+                        <i class="fa-solid fa-lock"></i>                    
+                        <input type="password" placeholder="Senha" id="senha" name="senha_admin" onclick="mostrarOcultarSenha()" required>
+                </div>
+                <br>
+                        <button type="submit" class="botaoCadastrar" onclick="contaCriada()">Entrar</button>
+                </div>
+            </form>
+    </main>
+    <script src="https://kit.fontawesome.com/87c9f9014b.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

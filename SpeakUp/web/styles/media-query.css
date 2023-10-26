@@ -1,0 +1,71 @@
+@media (max-width: 414px) {
+  .logo {
+    width: 80%;
+    left: 10%;
+    top: 15%;
+  }
+
+  .logoCadastro {
+    width: 100%;
+    left: 0%;
+    top: 10%;
+  }
+
+  .logoAluno {
+    width: 100%;
+    left: 0%;
+    top: 10%;
+  }
+
+  .logoProfessor {
+    width: 100%;
+    left: 0%;
+    top: 10%;
+  }
+
+  .logoResponsavel {
+    width: 100%;
+    left: 0%;
+    top: 10%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .escolhaCadastro {
+    transform: scale(0.9);
+  }
+
+  .form {
+    transform: scale(0.8);
+    position: relative;
+    top: 2rem;
+  }
+
+  #olhoLogin {
+    position: relative;
+    left: 4rem;
+    top: 10.7rem;
+  }
+
+  .logoCadastro{
+    position: absolute;
+    top: -2rem;
+  }
+
+  .logoProfessor{
+    position: absolute;
+    top: 1.5rem;
+  }
+
+  .logoResponsavel{
+    position: absolute;
+    top: -5rem;
+  }
+
+  .opcoes{  
+    display: block;
+  }
+
+  @media (max-width: 1920px){
+  }
+}

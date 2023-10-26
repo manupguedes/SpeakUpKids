@@ -1,0 +1,1531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    overflow: hidden;
+    height: 100vh;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+#bodyLogin {
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    width: 30%;
+    left: 33%;
+    margin-top: 2rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 1.2rem;
+}
+
+.formCadastrar {
+    width: 80%;
+    text-align: center;
+    transform: scale(1.4);
+    position: relative;
+    top: -3rem;
+    z-index: 1;
+}
+
+.inputs input {
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px black;
+    background-color: transparent;
+    margin-bottom: 1.2rem;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.inputs input:focus {
+    outline: none;
+}
+
+#olhoLogin {
+    position: relative;
+    left: 75px;
+    top: 9rem;
+    background: transparent;
+    border: none;
+}
+
+.fa-eye:hover {
+    cursor: pointer;
+}
+
+.links {
+    position: relative;
+    left: 4rem;
+}
+
+.links a {
+    font-size: 1 rem;
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.links a:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.botaoLogar {
+    width: 15rem;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    border: solid 1px black;
+}
+
+.botaoLogar:active {
+    transform: scale(0.9);
+}
+
+.botaoLogar:hover {
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Login Aluno--------------------------*/
+/*----------------------Login Professor--------------------------*/
+/*----------------------Login Admin--------------------------*/
+/*----------------------Login Resp--------------------------*/
+
+.linksLogin a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
+}
+
+.linksLogin a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Escolha Cadastro--------------------------*/
+/*----------------------Escolha Funcionario--------------------------*/
+
+.backArrow a {
+    color: black;
+    z-index: 2;
+}
+
+.backArrow .fa-arrow-left {
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+    z-index: 2;
+}
+
+.logoCadastro {
+    position: absolute;
+    width: 30%;
+    left: 33%;
+    margin-top: 5rem;
+}
+
+.escolhaCadastro {
+    padding: 1rem;
+    width: 20rem;
+    height: 20rem;
+    transform: scale(1.2);
+}
+
+.escolhaCadastro h3 {
+    font-size: 2rem;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.escolhaCadastro .links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.caixa {
+    display: flex;
+    padding: 2rem;
+    padding-top: 3rem;
+}
+
+.lado-esquerdo a {
+    text-decoration: none;
+    display: flex;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.lado-esquerdo a:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.lado-direito {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.lado-direito span {
+    justify-content: space-between;
+    margin: 0.6rem;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Cadastro Aluno--------------------------*/
+
+.logoAluno {
+    position: absolute;
+    width: 30%;
+    left: 33%;
+    top: 5%;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 1.2rem;
+    position: relative;
+    top: 1rem;
+}
+
+.inputs input {
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px black;
+    background-color: transparent;
+    margin-bottom: 1.2rem;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+}
+
+.inputs label {
+    font-size: 0.9rem;
+}
+
+.inputs input:focus {
+    outline: none;
+}
+
+.dataNasc {
+    width: 100%;
+    height: 20px;
+}
+
+.dataNasc input[type="date"] {
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 8rem;
+}
+
+.dataNasc label {
+    font-size: 0.8rem;
+}
+
+#olhoAluno {
+    position: relative;
+    left: 4.5rem;
+    top: 17rem;
+    background: transparent;
+    border: none;
+}
+
+.fa-eye:hover {
+    cursor: pointer;
+}
+
+.fa-eye:active {
+    transform: scale(0.9);
+}
+
+.botaoCadastrar {
+    width: 15rem;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    border: solid 1px black;
+}
+
+.botaoCadastrar:active {
+    transform: scale(0.9);
+}
+
+.botaoCadastrar:hover {
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Cadastrar Professor--------------------------*/
+/*----------------------Cadastrar Funcionário--------------------------*/
+
+.logoProfessor {
+    position: absolute;
+    width: 30%;
+    left: 33%;
+    top: 3rem;
+}
+
+#olhoProfessor {
+    position: relative;
+    left: 4.5rem;
+    top: 14.7rem;
+    background: transparent;
+    border: none;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Cadastrar Responsável--------------------------*/
+
+.logoResponsavel {
+    position: absolute;
+    width: 40%;
+    left: 30%;
+    top: -6.5rem;
+}
+
+#olhoResponsavel {
+    position: relative;
+    left: 4.5rem;
+    top: 14.7rem;
+    background: transparent;
+    border: none;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Esqueceu Senha--------------------------*/
+
+.titleRecuperacao {
+    text-align: center;
+    font-size: 1.4rem;
+    padding-bottom: 1.2;
+    position: relative;
+    top: -5rem;
+}
+
+.botaoEnviar {
+    width: 10rem;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.botaoEnviar:active {
+    transform: scale(0.9);
+}
+
+.botaoEnviar:hover {
+    cursor: pointer;
+    border: solid 1px black;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Aluno Minha Semana--------------------------*/
+
+#aluno {
+    background-color: #f2f2f2;
+    overflow: scroll;
+}
+
+.navAluno {
+    padding: 10px;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    width: 100%;
+    position: fixed;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    z-index: 1;
+}
+
+nav .navbar-list {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    top: -0.5rem;
+}
+
+.sidebar-container {
+    width: 220px;
+    height: 100vh;
+    background-color: #191e24;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 0 10px rgba(128, 128, 128, 0.507);
+    transition: 0.5s;
+    z-index: 10;
+    position: absolute;
+    left: 166px;
+    top: 0px;
+    left: 24.5rem;
+    display: none;
+}
+
+.toggle {
+    rotate: 180deg;
+    position: absolute;
+    top: 40px;
+    right: 215px;
+    z-index: -1;
+    background-color: #191e24;
+    height: 35px;
+    width: 40px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.lines {
+    width: 60%;
+    height: 2px;
+    display: block;
+    background-color: grey;
+    padding-right: 10px;
+}
+
+.toggle-function {
+    transform: translate(-220px, 0);
+    transition: 0.5s;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-size: cover;
+    background: #ffffff url("/web/aluno/images/logoFrase.png");
+    background-size: 15rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 7.8rem;
+}
+
+.profile-card .title {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #191e24;
+}
+
+.profile-card .subtitle {
+    font-weight: 300;
+    font-size: small;
+    letter-spacing: 1px;
+}
+
+.links-list li a,
+.signout a {
+    color: lightgray;
+    margin-left: 25px;
+    display: block;
+    font-weight: 300;
+    padding: 5px 0;
+    font-size: medium;
+    transition: ease-in-out 0.2s;
+    top: 0.1rem;
+}
+
+.links-list i,
+.signout i {
+    color: lightgray;
+    margin-right: 10px;
+}
+
+.links-list li {
+    width: 100%;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+footer {
+    text-align: end;
+    padding: 40px;
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+footer a {
+    color: grey;
+}
+
+nav .foneLogo {
+    width: 5rem;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 40px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    position: relative;
+    top: 1.6rem;
+}
+
+nav .opcoes:hover {
+    border-bottom: solid 4px black;
+    border-radius: 3px;
+    padding-bottom: 2.5rem;
+}
+
+nav i {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+nav .fa-user {
+    border: solid 3px black;
+    border-radius: 75%;
+    padding: 15px;
+    position: relative;
+    top: -1rem;
+}
+
+nav .fa-user:hover {
+    cursor: pointer;
+}
+
+#mainAluno {
+    padding-top: 170px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.boasVindas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.diaSemana {
+    display: flex;
+    justify-content: center;
+}
+
+.diaSemana h3 {
+    width: 5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.atividade {
+    height: 80px;
+    width: 75%;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.atividade:hover{
+    cursor:pointer;
+    border-image: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+    );
+    border-image-slice: 1;
+    border-image-width: 3px; /* Largura da borda do gradiente */
+    border-image-repeat: stretch;
+}
+
+
+
+/*----------------------------------------------------------------*/
+/*----------------------Aluno Conteudo--------------------------*/
+
+.titulo {
+    font-size: 2rem;
+}
+
+.subTitulo {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.containerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerAlunoMaterias {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+.conteudo {
+    border: solid 1px black;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1rem;
+    width: 30rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descConteudo {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.descConteudo a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.image {
+    position: relative;
+    width: 150.58px;
+    height: 198px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    top: 20px;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Aluno Atividades--------------------------*/
+
+.containerAlunoAtividades {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+.box {
+    width: 25rem;
+    height: 19rem;
+    background-color: #fff;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    flex-direction: column;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.box h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.1rem;
+}
+
+.box h6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+.contaUsuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.contaUsuario .fa-user {
+    font-size: 3rem;
+    border: solid 3px black;
+    border-radius: 75%;
+    padding: 15px;
+}
+
+.contaUsuario a {
+    text-decoration: none;
+    border: solid 2px black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 10rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: black;
+}
+
+
+.questao {
+    margin-bottom: 10px;
+}
+
+.questao label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 500px;
+    font-size: 1rem;
+}
+
+.questao input[type="checkbox"] + label:hover {
+    border-image: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+    );
+    border-image-slice: 1;
+    border-image-width: 3px; /* Largura da borda do gradiente */
+    border-image-repeat: stretch;
+    border-radius: 20px; /* Arredondamento adicional de 10px */
+}
+
+.questao input[type="checkbox"] {
+    display: none;
+}
+
+ .questao .alternativa {
+    font-weight: bold;
+    margin-right: 5px;
+    border: solid 1px black;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.questao input[type="checkbox"]:checked + label {
+    border-image: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+    );
+    border-image-slice: 1;
+    border-image-width: 3px; /* Largura da borda do gradiente */
+    border-image-repeat: stretch;
+    border-radius: 20px; /* Arredondamento adicional de 10px */
+}
+
+.formEntregarAtividade{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.linkQuestao{
+    text-decoration: none;
+    font-size: 0.7rem
+}
+
+
+
+.botaoFazerQuestao {
+    padding: 0.5rem;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 200px;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 1rem
+}
+
+.botaoFazerQuestao:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.revisarAtividade{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    border: solid 1px black;
+    border-radius: 15px;
+}
+
+.revisarAtividade:active{
+    transform: scale(0.9);
+}
+
+
+/*----------------------------------------------------------------*/
+/*----------------------Professor Alunos--------------------------*/
+
+#professor {
+    background-color: #f2f2f2;
+    overflow: scroll;
+}
+
+.navProfessor {
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    width: 100%;
+    position: fixed;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.containerProfessorAlunos {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+nav .professorLogo {
+    width: 15rem;
+}
+
+.box a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+.mural {
+    text-decoration: none;
+    border: solid 1px black;
+    border-radius: 50px;
+    padding: 1rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 5rem;
+}
+
+.mural:hover {
+    border-bottom: solid 3px black;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Professor Acompanhamento--------------------------*/
+
+#mainProfessor {
+    margin-top: 200px;
+}
+
+.containerProfessorAcompanhar {
+    display: flex;
+    justify-content: center;
+}
+
+.acompanhamento {
+    border: solid 1px black;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
+    transform: scale(0.9);
+}
+
+.titles {
+    display: flex;
+}
+
+.titles .provas {
+    margin-left: 37.5rem;
+}
+
+.exercicios {
+    display: flex;
+    margin: 1rem;
+    margin-top: 0;
+}
+
+.exercicios h1,
+span {
+    margin: 10px;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Professor Conteudo--------------------------*/
+
+.containerProfessorConteudo {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+table {
+    margin-top: 1rem;
+}
+
+td {
+    border: solid 1px black;
+    padding: 1rem;
+}
+
+th {
+    height: 50px;
+    padding: 1rem;
+    border-top-left-radius: 4px 2px;
+    border-top-right-radius: 4px 2px;
+}
+
+thead {
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+}
+.descConteudoProfessor {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.boxProfessorConteudo {
+    width: 30rem;
+    height: 19rem;
+    background-color: #fff;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.boxProfessorConteudo h4 {
+    display: flex;
+    justify-content: center;
+}
+
+.boxProfessorConteudo h6 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.boxProfessorConteudoox a {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.circle {
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    position: relative;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.circle .fa-plus {
+    color: white;
+    position: relative;
+    top: 0.4rem;
+    left: 0.8rem;
+}
+
+/*----------------------------------------------------------------*/
+/*---------------Professor Adicionar Conteudo---------------------*/
+
+#imageInputContainer {
+    position: relative;
+    width: 150.98px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    top: 20px;
+}
+
+#imagePreview {
+    width: 150.98px;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    border-radius: 15px;
+}
+
+#placeholderText {
+    display: flex;
+    position: relative;
+    top: 3.5rem;
+    left: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+    pointer-events: none;
+}
+
+#fileInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150.98px;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.informacaoConteudo {
+    padding-top: 10px;
+    border: none;
+    border-bottom: solid 1px black;
+    background-color: transparent;
+    margin-bottom: 1.2rem;
+    text-align: start;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
+    width: 80%;
+    margin: 15px;
+    margin-top: 30px;
+}
+
+.informacaoConteudo:focus {
+    outline: none;
+}
+
+.descConteudoAdicionarConteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#arquivos {
+    width: 20rem;
+    margin: 10px;
+    padding: 10px;
+}
+
+.button {
+    width: 5rem;
+    position: relative;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------Professor Atividades----------------------*/
+
+.containerProfessorAtividades {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+.conteudoProfessorAtividades {
+    border: solid 1px black;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 1rem;
+    width: 20rem;
+    height: 19rem;
+    display: flex;
+}
+
+.descConteudoProfessorAtividades {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.descConteudoProfessorAtividades a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    margin-top: 3rem;
+}
+
+.descConteudoProfessorAtividades a:hover {
+    transform: scale(1.1);
+}
+
+/*----------------------------------------------------------------*/
+/*-------------------Professor Lista Exercicio-------------------*/
+
+#mainListaExercicos {
+    padding-top: 170px;
+    padding-left: 500px;
+    padding-right: 500px;
+    height: 100vh;
+}
+
+.questao h1 {
+    margin-bottom: 2rem;
+}
+
+.op {
+    position: relative;
+    top: -1.2rem;
+}
+
+.formQuestoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formQuestoes input[type="radio"] {
+    position: relative;
+    left: -4rem;
+}
+
+.formQuestoes label {
+    position: relative;
+    font-size: 1rem;
+}
+.formQuestoes button {
+    transition: 0.5s ease-in-out;
+    margin-top: 1rem;
+}
+
+.formQuestoes button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.questao {
+    display: flex;
+    justify-content: center;
+}
+
+.enunciado {
+    margin-top: 4rem;
+}
+
+.enunciado label {
+    position: relative;
+    top: -6rem;
+    left: 9rem;
+    font-weight: bold;
+}
+
+.enunciado textarea {
+    position: relative;
+    top: -1rem;
+    left: -5.7rem;
+    resize: none;
+}
+
+.respostaAluno {
+    margin-top: 1rem;
+}
+
+.visaoAluno {
+    position: absolute;
+    left: 70rem;
+    top: 15rem;
+}
+
+.alternativa input {
+    margin: 0.5rem;
+    width: 10rem;
+    left: 0;
+}
+
+.botao {
+    padding: 0.5rem;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.formFinal button {
+    position: relative;
+    left: 22rem;
+    margin: 0.5rem;
+    margin-top: 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.formFinal button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.botaoEncerrarAtividade{
+    padding: 0.5rem;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.botaoEncerrarAtividade a{
+    background-color: transparent;
+}
+
+.botaoEncerrarAtividade {
+    transition: 0.5s ease-in-out;
+    background-color: transparent;
+    border: none;
+}
+
+.botaoEncerrarAtividade:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.numQuestao{
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px black;
+    background-color: transparent;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1rem;
+}
+
+.numQuestao:focus{
+    outline: none;
+}
+
+
+/*----------------------------------------------------------------*/
+/*-------------------Professor Lista Exercicio-------------------*/
+
+.contaUsuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
+
+.contaUsuario .fa-user {
+    font-size: 3rem;
+    border: solid 3px black;
+    border-radius: 75%;
+    padding: 15px;
+}
+
+.contaUsuario a {
+    text-decoration: none;
+    border: solid 2px black;
+    border-radius: 15px;
+    padding: 10px;
+    width: 10rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    color: black;
+}
+
+.contaUsuario a:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/*----------------------------------------------------------------*/
+
+.boxTurma {
+    width: 19rem;
+    height: 19rem;
+    background-color: #fff;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    font-size: 1.5rem;
+    margin: 0.5rem;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+/*----------------------Admin Adicionar Turma-------------------------------*/
+
+.containerAdminAdicionarTurma {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    margin-top: 2rem;
+    background-color: transparent;
+}
+
+.AdminContainerCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudoAdminAdicionarTurma {
+    border: solid 1px transparent;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1rem;
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.descConteudoAdminAdicionarTurma {
+    display: flex;
+    flex-direction: column;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.descConteudoAdminAdicionarTurma a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    margin-top: 1rem;
+}
+
+.descConteudoAdminAdicionarTurma a:hover {
+    transform: scale(1.1);
+}
+
+.descConteudoAdminAdicionarProfessorAluno a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    margin-top: 2rem;
+    width: 11rem;
+}
+
+.descConteudoAdminAdicionarProfessorAluno a:hover {
+    transform: scale(1.1);
+}
+
+.containerBotao {
+    display: flex;
+    justify-content: center;
+    margin-top: -4rem;
+}
+
+.botaoAdicionarTurma {
+    padding: 0.5rem;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        90deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 200px;
+    transition: 0.5s ease-in-out;
+    margin-top: 5.5rem;
+}
+
+.botaoAdicionarTurma:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.adicionarTurma {
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+    background-color: white;
+    width: 30rem;
+    height: 8rem;
+}
+
+.adicionarTurma h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgb(255, 169, 161);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 169, 161, 1) 0%,
+        rgba(255, 251, 173, 1) 50%,
+        rgba(167, 212, 255, 1) 100%
+        );
+}
